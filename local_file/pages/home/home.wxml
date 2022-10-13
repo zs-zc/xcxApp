@@ -1,0 +1,32 @@
+<!--pages/home/home.wxml-->
+<swiper indicator-dots autoplay circular>
+  <swiper-item wx:for="{{swiperList}}" wx:key="id">
+    <image src="{{item.image}}"></image>
+  </swiper-item>
+</swiper>
+<view class="gird">
+  <navigator class="girdView" wx:for="{{girdList}}" wx:key="id" url="/pages/shopList/shopList?id={{item.id}}&title={{item.name}}">
+    <image src="{{item.icon}}"></image>
+    <text>{{item.name}}</text>
+  </navigator>
+</view>
+<view class="imgs">
+  <image src="/imgs/0.jpg"></image>
+  <image src="/imgs/01.jpg"></image>
+</view>
+<!-- navegite -->
+<view class="naveGo">
+  <button type="primary">
+    <navigator url="/pages/contact/contact" open-type="switchTab">跳到tabbar</navigator>
+  </button>
+  <button type="primary">
+    <navigator url="/pages/info/info" open-type="navigate">跳到tabbar</navigator>
+  </button>
+  <button type="primary">
+    <navigator bindtap="navegiteHandle">按钮事件跳转tab</navigator>
+  </button>
+  <button type="primary">
+    <navigator bindtap="disnavegiteHandle">按钮事件跳转非tab</navigator>
+  </button>
+  <my-test1></my-test1>
+</view>

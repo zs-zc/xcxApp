@@ -1,0 +1,14 @@
+function toLower(str) {
+  return str.toLowerCase();
+}
+module.exports = {
+  toLower: toLower
+}
+
+function splicePhone(str) {
+  if (str.length !== 11) return
+  return str.slice(0, 3) + "-" + str.slice(3, 7) + "-" + str.slice(7, 12)
+}
+module.exports = {
+  splicePhone: splicePhone
+}

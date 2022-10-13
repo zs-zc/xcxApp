@@ -1,0 +1,6 @@
+<!--components/test4/test4.wxml-->
+<view>
+  <slot name="before"></slot>
+  <text>测试</text>
+  <slot name="after"></slot>
+</view>

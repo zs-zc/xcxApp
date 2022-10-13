@@ -1,0 +1,5 @@
+<!--components/test5/test5.wxml-->
+<view>父组件的值是否能显示：{{count}}</view>
+<view>behaviors中的用户名：{{username}}</view>
+<button type="primary" bindtap="addOne">+1</button>
+<van-button type="primary">vant-按钮</van-button>

@@ -1,0 +1,40 @@
+{
+  "usingComponents": {
+    "my-test1": "/components/test/test",
+    "my-test2": "/components/test2/test2",
+    "my-test3": "/components/test3/test3",
+    "my-test4": "/components/test4/test4",
+    "my-test5": "/components/test5/test5",
+    "van-button": "@vant/weapp/button/index"
+  },
+  "pages": [
+    "pages/home/home",
+    "pages/message/message",
+    "pages/contact/contact",
+    "pages/info/info",
+    "pages/shopList/shopList"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "本地生活",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系我们"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,27 @@
+<!--pages/message/message.wxml-->
+<!--
+<view> {{m1.toUpper(username)}}</view>
+<view>{{m2.toLower(country)}}</view>
+ <my-test1></my-test1>
+<view></view>
+<my-test2></my-test2>
+<view></view>
+<my-test3></my-test3> 
+<view></view>
+<my-test4>
+  <view slot="before">插槽前</view>
+  <view slot="after">插槽后</view>
+</my-test4>-->
+<!-- <view>我是父组件：值为{{count}}</view>
+<my-test5 count="{{count}}" bind:sync="syncCount"></my-test5>
+<button bindtap="getInfo"> 获取信息</button> -->
+<view>{{numA}}+{{numB}}={{sum}}</view>
+<van-button type="primary" bindtap="handleClick1" data-step="{{1}}">numA+1</van-button>
+<van-button type="danger" bindtap="handleClick1" data-step="{{-1}}">numA-1</van-button>
+<wxs module="m1">
+  module.exports.toUpper = function (str) {
+    return str.toUpperCase();
+  }
+</wxs>
+
+<wxs src="../../utils/tools.wxs" module="m2"></wxs>

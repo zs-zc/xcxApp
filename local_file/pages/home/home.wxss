@@ -1,0 +1,53 @@
+/* pages/home/home.wxss */
+swiper {
+  height: 350rpx;
+}
+
+swiper swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.gird {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1rpx solid #efefef;
+  border-left: 1rpx solid #efefef;
+}
+
+.gird .girdView {
+  width: 33.33%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1rpx solid #efefef;
+  border-bottom: 1rpx solid #efefef;
+  box-sizing: border-box;
+}
+
+.gird .girdView  image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.gird .girdView text {
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+.imgs{
+  display: flex;
+  height: 200rpx;
+}
+.imgs image{
+  margin: 10rpx;
+  border-radius: 10rpx;
+  height: 100%;
+}
+.naveGo {
+  display: flex;
+  padding: 20rpx;
+  justify-content: space-around;
+}

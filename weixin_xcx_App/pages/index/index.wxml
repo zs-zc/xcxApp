@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view>
+  {{name}}
+  <image src="{{Src}}" mode="widthFix"></image>
+  <view>计数：{{count}}</view>
+  <button type="primary" bindtap="bindtapHandle"> 按钮</button>
+  <input value="{{inputVal}}" bindinput="inputHandle" class="input1" />
+  <view wx:if="{{type===1}}">男</view>
+  <view wx:elif="{{type===2}}">女</view>
+  <view wx:else>保密</view>
+  <block wx:if="{{false}}">
+    <view>1</view>
+    <view>2</view>
+  </block>
+  <button type="primary" bindtap="getHandle">GET请求</button>
+  <button type="primary" bindtap="postHandle">POST请求</button>
+</view>

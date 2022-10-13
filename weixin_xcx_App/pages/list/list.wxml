@@ -1,0 +1,17 @@
+<!--pages/list/list.wxml-->
+<view class="container1">
+  <view>a</view>
+  <view>b</view>
+  <view>c</view>
+</view>
+<swiper class="swiper_container" indicator-dots indicator-color="#fff" circular autoplay>
+  <swiper-item >
+    <view class="item">A</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="item">B</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="item">C</view>
+  </swiper-item>
+</swiper>
